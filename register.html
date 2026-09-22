@@ -17,10 +17,34 @@
         <li><a href="./register.html">Registro</a></li>
       </ul>
     </div>
-      
-    
   </header>
-
+<main>
+    <section class="seccion-registro">
+        <form action="login.html" method="post">
+            <h2>Registro</h2>
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" name="mail" placeholder="ejemplo@correo.com" value="" required>
+            </div>
+            <div> 
+                <label for="password">Contrasñea:</label>
+                <input type="password" name="Contraseña" placeholder="Crea tu contraseña" required>
+            </div>
+            <div>
+                <label for="confirm-password">Repetir Contraseña:</label>
+                <input type="password" name="Contraseña" placeholder="Repite tu contraseña" value="" required>
+            </div>
+            <div class="opciones-terminos">
+                <input type="checkbox" name="Términos" required >
+                <label for="terminos">Acepto términos y condiciones</label>
+            </div>
+             <button type="submit">Registrarme</button>
+            <p>
+                <a href="login.html">Ya tengo cuenta.</a>
+            </p>
+        </form>
+    </section>
+</main>
 
 
 
@@ -28,4 +52,4 @@
     <p>Desarrollado por: Lourdes Espinoza, Lucia Caceres, Dana Sambuesa.</p>
   </footer>
 </body>
-</html>u0----
+</html>
