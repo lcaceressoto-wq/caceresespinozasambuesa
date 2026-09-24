@@ -9,8 +9,10 @@
 <body>    
     <header class="header-principal">
     <a href="./index.html"><img src="./img/Gemini_Generated_Image_3ru7yn3ru7yn3ru7.png" alt="Logo de la tienda"></a>
-<formlss action="./register.html" method="GET"></form>
-<input type="text">
+<form action="./search-results.html" method="GET">
+<input type="text" name="busqueda" placeholder="Buscar productos...">
+<button type="submit">Buscar</button>
+</form>
     <div>
         <ul>
         <li><a href="./index.html">Home</a></li>
@@ -49,27 +51,27 @@
       </ul>
       </nav>
     </aside>
-<main>
+<main class="contenedor-auth">
     <section class="seccion-registro">
-        <form action="login.html" method="post">
+        <form class="form-auth" action="login.html" method="post">
             <h2>Registro</h2>
             <div>
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" name="mail" placeholder="ejemplo@correo.com" value="" required>
+                <input type="email" name="mail" class="input-form" placeholder="ejemplo@correo.com" value="" required>
             </div>
             <div> 
                 <label for="password">Contrasñea:</label>
-                <input type="password" name="Contraseña" placeholder="Crea tu contraseña" required>
+                <input type="password" name="Contraseña" class=".input-form" placeholder="Crea tu contraseña" required>
             </div>
             <div>
                 <label for="confirm-password">Repetir Contraseña:</label>
-                <input type="password" name="Contraseña" placeholder="Repite tu contraseña" value="" required>
+                <input type="password" name="Contraseña" class=".input-form" placeholder="Repite tu contraseña" value="" required>
             </div>
             <div class="opciones-terminos">
                 <input type="checkbox" name="Términos" required >
                 <label for="terminos">Acepto términos y condiciones</label>
             </div>
-             <button type="submit">Registrarme</button>
+             <button type="submit" class="btn-submit">Registrarme</button>
             <p>
                 <a href="login.html">Ya tengo cuenta.</a>
             </p>
