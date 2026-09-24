@@ -248,3 +248,127 @@ footer {
   margin-top: 30px;
   border-top: 1px solid #e0e0e0;
 }
+
+
+.detalle-producto {
+    width: 100%;
+}
+
+.bloque-producto {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.columna-imagen {
+    width: 45%;
+    margin-right: 5%; 
+}
+
+.columna-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+
+.columna-info {
+    width: 50%;
+}
+
+.columna-info h1 {
+    font-size: 26px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+.columna-info p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #444444;
+}
+
+.precio-detalle {
+    font-size: 18px;
+    color: #2a2a2a;
+    margin: 10px 0;
+}
+
+.caja-descripcion {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.caja-descripcion h3 {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.caja-descripcion p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555555;
+}
+
+/* Etiquetas */
+.caja-etiquetas {
+    margin-top: 20px;
+}
+
+.lista-etiquetas {
+    display: flex;
+    list-style: none;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.lista-etiquetas li {
+    background-color: #f0f0f0;
+    padding: 4px 8px;
+    margin-right: 8px; 
+    border-radius: 4px;
+    font-size: 12px;
+    color: #555555;
+}
+
+.seccion-opiniones {
+    border-top: 2px solid #e0e0e0;
+    padding-top: 25px;
+    margin-top: 20px;
+}
+
+.seccion-opiniones h2 {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.card-opinion {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px; /* Margen inferior entre tarjetas */
+}
+
+.header-opinion {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.raiting {
+    color: #f39c12;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
