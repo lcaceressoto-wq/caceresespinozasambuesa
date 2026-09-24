@@ -457,5 +457,10 @@ footer {
     font-size: 13px;
     margin-bottom: 8px;
 }
-
+.seccion-login
+{
+    background-color: #b69a7a;
+    padding: 15px;
+    border-radius: 5px;
+}
 
