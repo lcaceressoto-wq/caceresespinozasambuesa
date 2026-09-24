@@ -7,14 +7,14 @@ body {
    background-color: #FAF6F0; 
     color: #83513E; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-image: url(../../../../Downloads/image_ed41814e.jpg);
 }
+
 .header-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #ffffff;
-    border-bottom: 2px solid #E67E22;
 }
 .header-principal img
 {
@@ -56,7 +56,7 @@ width: auto;
     margin-right: 30px;
     height: fit-content;
     box-sizing: border-box;
-    background-color: #FAD6D3;
+    background-color: #e7cca4;
 
 }
 .menu-categorias ul
@@ -68,7 +68,7 @@ margin:0;
 .menu-categorias a
 {
     text-decoration:none;
-    color: #444444;
+    color: #ffffff;
     font-size:14px;
     display: block;
     padding:6px 10px;
@@ -143,7 +143,7 @@ margin:0;
 .Card-productos .detalles
 {
     text-decoration: none;
-    background-color: #F28AA1;
+    background-color:#83513E; 
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -155,8 +155,8 @@ margin:0;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #e4d2bb;
+    border-bottom: 1px solid #e9d6bb;
 }
 .header-principal img
 {
@@ -205,7 +205,7 @@ h1{
     margin-right: 30px;
     height: fit-content;
     box-sizing: border-box;
-    background-color: #f9f9f9;
+    background-color: #b69a7a;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
@@ -265,7 +265,7 @@ h1{
 .btn-detalle, .detalles
 {
     text-decoration: none;
-    background-color: #F28AA1;
+    background-color: #83513E;
     color: white;
     padding: 8px 15px;
     font-size: 14px;
@@ -395,18 +395,4 @@ footer {
     margin-bottom: 8px;
 }
 
-@media (max-width: 768px) {
-    .detalle-producto {
-        width: 100%;
-    }
 
-    .columna-imagen,
-    .columna-info {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .columna-imagen {
-        margin-bottom: 20px;
-    }
-}
