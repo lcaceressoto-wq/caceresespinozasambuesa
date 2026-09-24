@@ -137,11 +137,6 @@ margin:0;
     border-radius: 4px;
 }
 
-.menu-categorias a:hover {
-    background-color: #f0f0f0;
-    color: #E67E22;
-}
-
 .secction-productos, .seccion-productos {
     margin-bottom: 40px;
     width: 100%;
