@@ -497,3 +497,20 @@ text-decoration: none;
 text-decoration-line: none;
 color:#83513E;
 }
+@media  (max-width: 500px) {
+    .header-principal {
+flex-direction: column;
+}
+.menu-categorias {
+   order: 2;
+    width: 100%; 
+   
+}
+.div-principal, .contenedor-principal {
+    flex-direction: column;
+}
+.seccion-registro, .seccion-login {
+    width: 100%;
+}
+
+}
