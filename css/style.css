@@ -452,12 +452,6 @@ footer {
     font-size: 13px;
     margin-bottom: 8px;
 }
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .seccion-login, .seccion-registro {
     display: flex;
     flex-direction: column;
@@ -493,4 +487,7 @@ header button {
     border: 1px solid #b69a7a;
     border-radius: 5px;
     background-color: #ffffff;
+}
+.header-principal img {
+    border-radius: 50%;
 }
