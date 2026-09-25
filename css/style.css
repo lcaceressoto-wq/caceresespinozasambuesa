@@ -491,3 +491,9 @@ header button {
 .header-principal img {
     border-radius: 50%;
 }
+.enlace-registro a
+{
+text-decoration: none;
+text-decoration-line: none;
+color:#83513E;
+}
