@@ -9,7 +9,10 @@ formulario.addEventListener("submit", function(event){
         alert("Completa tu correo electrónico");
     } else if (contraseña.value===""){
         alert("Completá tu contraseña");
-    } else {
+    } else if(contraseña.value.length < 6){
+        alert("La contraseña debe tener al menos 6 caracteres")
+    }
+     else {
         localStorage.setItem("email", email.value);
         location.href = "./index.html";
-    }})
+    }});
