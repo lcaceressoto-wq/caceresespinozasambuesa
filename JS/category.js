@@ -9,10 +9,20 @@ fetch("https://dummyjson.com/products/category/" + categoria)
     return response.json();
 })
 .then(function(data){
-    console.log(data);
+    let productos =""; 
     for(let i= 0; i<data.products.length; i++){
-        console.log(data.products[i].title);
+        productos +=`
+        <article class="card-producto">
+        <img src= " ${data.products[i].thumbnail}" alt="${data.products[i].title}">
+        <h3>${data.products[i].title}</h3>
+        <p class = "precio"> $${data.products[i].price}</p>
+        <a href = "./product.html?id=${data.products[i].id}" class = "btn-detalle"> 
+            Ver detalle 
+        </a>
+        </article>
+        `;
     }
+    grilla.innerHTML = productos; 
 })
 .catch (function(error){
     console.log(error);
