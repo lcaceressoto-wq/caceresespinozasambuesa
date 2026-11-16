@@ -10,6 +10,9 @@ fetch("https://dummyjson.com/products/category/" + categoria)
 })
 .then(function(data){
     console.log(data);
+    for(let i= 0; i<data.products.length; i++){
+        console.log(data.products[i].title);
+    }
 })
 .catch (function(error){
     console.log(error);
