@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle del producto</title>
+    <title >Detalle del producto</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -39,15 +39,15 @@
                 
         
     <div class="columna-imagen">
-     <img src="./img/Miss Dior Detalle.jpg" alt="Frasco de perfume Miss Dior Eau de Parfum 100ml">
+     <img class=" img-producto" src="./img/Miss Dior Detalle.jpg" alt="Frasco de perfume Miss Dior Eau de Parfum 100ml">
                 </div>
 
  <div class="columna-info">
-        <h1>Miss Dior EDP 100 ml</h1>
-     <p><strong>Marca: </strong>Dior</p>
+        <h1 class= "titulo-producto">Miss Dior EDP 100 ml</h1>
+     <p class="marca-producto"><strong>Marca: </strong>Dior</p>
      <p class="precio-detalle"><strong>Precio: </strong>$150</p>
-     <p><strong>Categoría: </strong><a href="./category.html">Fragrances</a></p>
-     <p><strong>Stock: </strong>8 unidades</p>
+     <p><strong>Categoría: </strong><a class="categoria-producto" href="./category.html">Fragrances</a></p>
+     <p class="stock-producto"><strong>Stock: </strong>8 unidades</p>
                     
      <div class="caja-descripcion">
       <h3>Descripción</h3>
@@ -56,7 +56,7 @@
 
      <div class="caja-etiquetas">
     <strong>Etiquetas:</strong>
-     <ul>
+     <ul class="lista-tag">
         <li>#perfumes</li>
         <li>#Dior</li>
          <li>#fragancias</li>
@@ -69,7 +69,7 @@
             
             <section class="seccion-opiniones">
                 <h2>Opiniones de los usuarios</h2>
-
+        <div class="contenedor-reviews">
                 <article class="card-opinion">
                     <header class="header-opinion">
                         <span>Sofía Martinez -</span>
@@ -87,6 +87,7 @@
                     <div class="raiting">Rating: ★★★★★ (5/5)</div>
                     <p>Un clásico infaltable. Aroma súper dulce, floral y elegante. Llegó en perfecto estado.</p>
                 </article>
+            </div>
             </section>
 
         </main>
@@ -97,5 +98,6 @@
     </footer>
     <script src="./JS/saludo.js"></script>
     <script src="./JS/categorias.js"></script>
+    <script src="./JS/product.js"></script>
 </body>
 </html>
