@@ -39,10 +39,10 @@ fetch('https://dummyjson.com/products/' + idProducto)
         // modifico la imagen que tenia en el html por la imagen que viene de la API 
         imagen.src = data.images[0];
 
-        // Modificamos el enlace de la categoría para que sepa que categoria mostrar y asi traerla desde la API 
+        // modificamos el enlace de la categoría para que sepa que categoria mostrar y asi traerla desde la API 
         categoria.href = './category.html?categoria=' + data.category;
 
-        // Mostramos las etiquetas del producto
+        // mostramos las etiquetas del producto
         listaTags.innerHTML = '';
 
         for (let i = 0; i < data.tags.length && i < 3; i++) {
