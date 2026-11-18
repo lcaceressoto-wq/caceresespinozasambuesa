@@ -16,9 +16,10 @@
                 <li class="menu-registro"><a href="./register.html">Registro</a></li>
             </ul>
         </nav>
-        <form action="./search-results.html" method="GET">
+        <form action="./search-results.html" method="GET" class="form-buscador">
             <input type="text" name="busqueda" class="input-buscar" placeholder="Buscar productos...">
             <button type="submit">Buscar</button> 
+            <p class="mensaje-error"></p>
         </form>
         <p class="saludo"></p>
         <button type="button" class="cerrar-sesión">Cerrar sesión</button>
@@ -100,5 +101,6 @@
     <script src="./JS/categorias.js"></script>
     <script src="./JS/product.js"></script>
     <script src="./JS/register.js"></script>
+    <script src="./js/validacion-buscador.js"></script>
 </body>
 </html>
