@@ -3,7 +3,13 @@ let categoria = parametros.get ("categoria");
 console.log(categoria);
 let grilla = document.querySelector(".grilla-productos");
 let titulo = document.querySelector(".seccion-productos h1");
-titulo.innerText = "Categoría:" + " " + categoria;
+//Si la direccion no indica una categoria pide que el usuario elija una. 
+if (categoria === null || categoria === ""){
+    titulo.innerText = "Elegí una categoría del menú"
+}else {
+    titulo.innerText = "Categoría:" + " " + categoria;
+}
+
 fetch("https://dummyjson.com/products/category/" + categoria)
 .then(function(response){
     return response.json();

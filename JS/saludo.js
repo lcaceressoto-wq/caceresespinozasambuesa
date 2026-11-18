@@ -1,7 +1,12 @@
+//Busco y capturo el elemento del HTML donde voy a mostrar el saludo.
 let saludo = document.querySelector(".saludo");
+// Recupero el email guardado. Si no existe esa clave, devuelve null.
 let emailGuardado= localStorage.getItem("email");
+//Busco el botón de cerrar sesión y lo capturo.
 let cerrarSesión = document.querySelector(".cerrar-sesión");
+//Busco el elemento del menú que contiene el encale a Login y lo capturo.
 let menuLogin = document.querySelector(".menu-login");
+
 let menuRegistro = document.querySelector(".menu-registro");
 if (emailGuardado !== null){
     saludo.innerText= "Hola" + " " + emailGuardado;
