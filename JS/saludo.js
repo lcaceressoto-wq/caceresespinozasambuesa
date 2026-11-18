@@ -6,7 +6,7 @@ let emailGuardado= localStorage.getItem("email");
 let cerrarSesión = document.querySelector(".cerrar-sesión");
 //Busco el elemento del menú que contiene el encale a Login y lo capturo.
 let menuLogin = document.querySelector(".menu-login");
-
+//Busco el elemento del menú que contiene el enlace a Registro.
 let menuRegistro = document.querySelector(".menu-registro");
 if (emailGuardado !== null){
     saludo.innerText= "Hola" + " " + emailGuardado;
