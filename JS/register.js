@@ -15,11 +15,12 @@ formulario.addEventListener ('submit', function(event) {
     // valido que el email no esté vacío
 
     if (email.value == '') {
+        //le aviso al usuario en el html
 
         mensajeError.innerText = 'El email es obligatorio';
 
 }
-  
+  //hago lo mismo pero con la contraseña 
     else if (password.value == '') {
 
         mensajeError.innerText = 'La contraseña es obligatoria';
