@@ -1,35 +1,18 @@
-let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString);
-let terminoBuscado = queryStringObj.get("busqueda");
+let formulario = document.querySelector(".form-buscador");
+let campoBuscar = document.querySelector(".input-buscar");
+let mensajeError = document.querySelector(".mensaje-error");
 
-let tituloResultados = document.querySelector(".seccion-productos h2");
-let contenedorProductos = document.querySelector(".grilla-productos");
+formulario.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-tituloResultados.innerText = `Resultados de búsqueda para: ${terminoBuscado}`;
+    let valorBusqueda = campoBuscar.value.trim();
 
-fetch(`https://dummyjson.com/products/search?q=${terminoBuscado}`)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
-        let productos = data.products;
-
-        if (productos.length == 0) {
-            tituloResultados.innerText = `No hay resultados para el término: ${terminoBuscado}`;
-        } else {
-            for (let i = 0; i < productos.length; i++) {
-                contenedorProductos.innerHTML += `
-                    <article class="card-producto">
-                        <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
-                        <h3>${productos[i].title}</h3>
-                        <p class="descripcion">${productos[i].description}</p>
-                        <p class="Precio">$${productos[i].price}</p>
-                        <a href="./product.html?id=${productos[i].id}" class="btn-detalle">Ver detalle</a>
-                    </article>
-                `;
-            }
-        }
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-    });
+    if (valorBusqueda == "") {
+        mensajeError.innerText = "El campo de búsqueda no puede estar vacío.";
+    } else if (valorBusqueda.length < 3) {
+        mensajeError.innerText = "El término debe tener al menos 3 caracteres.";
+    } else {
+        mensajeError.innerText = "";
+        this.submit();
+    }
+});
