@@ -1,11 +1,11 @@
 //Busco el formulario de login, lo capturo y lo guardo en una variable.
-let formulario = document.querySelector(".form-auth");
+let formularioLogin = document.querySelector(".form-auth");
 //Busco el input donde el usuario escribe su email y lo capturo.
 let email= document.querySelector(".email");
 //Capturo el input donde escribe su contraseña.
 let contraseña= document.querySelector(".Pass");
 // Cuando se intenta enviar el formulario, se ejecuta esta función. 
-formulario.addEventListener("submit", function(event){
+formularioLogin.addEventListener("submit", function(event){
     //Evito el envío automático para primero revisar los datos.
     event.preventDefault();
     // .value obtiene lo escrito en el input; " " significa vacío.

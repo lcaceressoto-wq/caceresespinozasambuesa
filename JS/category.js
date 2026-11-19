@@ -8,7 +8,7 @@ if (categoria === null || categoria === ""){
     titulo.innerText = "Elegí una categoría del menú"
 }else {
     titulo.innerText = "Categoría:" + " " + categoria;
-}
+
 
 fetch("https://dummyjson.com/products/category/" + categoria)
 .then(function(response){
@@ -33,3 +33,4 @@ fetch("https://dummyjson.com/products/category/" + categoria)
 .catch (function(error){
     console.log(error);
 });
+}
