@@ -38,7 +38,7 @@ fetch("https://dummyjson.com/products?limit=6&skip=10")
                     <h3>${productos[i].title}</h3>
                     <p class="Descripcion">${productos[i].description}</p>
                     <p class="Precio">$${productos[i].price}</p>
-                    <a href="./product.html?id=${productos[i].id}" class="detalles">Ver detalles</a>
+                    <a href = "./product.html?id=${data.products[i].id}" class = "btn-detalle">  Ver detalle 
                 </article>
             `;
         }

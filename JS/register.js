@@ -1,9 +1,9 @@
 //capturo los elementos 
 let formulario = document.querySelector('.form-auth');
 
-let email = document.querySelector('#email');
-let password = document.querySelector('#password');
-let repetirPassword = document.querySelector('#confirm-password');
+let email = document.querySelector('.email');
+let password = document.querySelector('.password');
+let repetirPassword = document.querySelector('.confirm-password');
 
 let mensajeError = document.querySelector('.mensaje-error');
 
@@ -17,13 +17,13 @@ formulario.addEventListener ('submit', function(event) {
     if (email.value == '') {
         //le aviso al usuario en el html
 
-        mensajeError.innerText = 'El email es obligatorio';
+       alert("El email es obligatorio") ;
 
 }
   //hago lo mismo pero con la contraseña 
     else if (password.value == '') {
 
-        mensajeError.innerText = 'La contraseña es obligatoria';
+        alert("La contraseña es obligatoria");
 
     }
 
@@ -31,23 +31,21 @@ formulario.addEventListener ('submit', function(event) {
 
     else if (password.value.length < 6) {
 
-        mensajeError.innerText = 'La contraseña debe tener al menos 6 caracteres';
+       alert("La contraseña debe tener al menos 6 caracteres");
 
     }
     else if (password.value != repetirPassword.value) {
 
-        mensajeError.innerText = 'Las contraseñas no coinciden';
+        alert("Las contraseñas no coinciden");
 
     }
 
     // en caso de q todas las validaciones esten bien 
 
-    else {
-
-        mensajeError.innerText = '';
-
-        window.location.href = './login.html';
-
+     else {
+        alert("¡Registro correcto!");
+        location.href = "./login.html";
     }
+
 
 });
