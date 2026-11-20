@@ -1,51 +1,56 @@
-//capturo los elementos 
-let formulario = document.querySelector('.form-auth');
+// capturo los elementos
+let formularioRegister = document.querySelector('.form-auth');
 
 let email = document.querySelector('.email');
 let password = document.querySelector('.password');
 let repetirPassword = document.querySelector('.confirm-password');
 
-let mensajeError = document.querySelector('.mensaje-error');
+formularioRegister.addEventListener('submit', function(event) {
 
-formulario.addEventListener ('submit', function(event) {
-  // evito que el formulario se envíe automáticamente
-
-   event.preventDefault();
+    // evito que el formulario se envíe automáticamente
+    event.preventDefault();
 
     // valido que el email no esté vacío
-
     if (email.value == '') {
-        //le aviso al usuario en el html
 
-       alert("El email es obligatorio") ;
+        alert("El email es obligatorio");
 
-}
-  //hago lo mismo pero con la contraseña 
+    }
+
+    // valido que la contraseña no esté vacía
     else if (password.value == '') {
 
         alert("La contraseña es obligatoria");
 
     }
 
-    // esto lo hago para validar que tenga al menos como minimo 6 caracteres 
-
+    // valido que tenga al menos 6 caracteres
     else if (password.value.length < 6) {
 
-       alert("La contraseña debe tener al menos 6 caracteres");
+        alert("La contraseña debe tener al menos 6 caracteres");
 
     }
+
+    // valido que se haya repetido la contraseña
+    else if (repetirPassword.value == '') {
+
+        alert("Tenés que repetir la contraseña");
+
+    }
+
+    // comparo las dos contraseñas
     else if (password.value != repetirPassword.value) {
 
         alert("Las contraseñas no coinciden");
 
     }
 
-    // en caso de q todas las validaciones esten bien 
+    // si todas las validaciones están bien
+    else {
 
-     else {
         alert("¡Registro correcto!");
         location.href = "./login.html";
-    }
 
+    }
 
 });
