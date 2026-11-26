@@ -46,4 +46,4 @@ fetch("https://dummyjson.com/products?limit=6&skip=10")
     .catch(function(error) {
         console.log("Error: " + error);
     });
-//LULI: tengo que poner algo en el for para que ande el product 
+ 
